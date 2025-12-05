@@ -1,0 +1,1114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Navbar Styling */
+
+/* ----- Navbar Wrapper ----- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  background: #1e1f22;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ----- Left side: Logo + links ----- */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.nav-logo {
+  color: #4fd1c5;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Normal links */
+.nav-link {
+  /* color: #e4e4e4; */
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+
+.nav-link:hover {
+  background: #333;
+  color: #4fd1c5;
+}
+
+/* ----- Right side: Login + Register or Logout ----- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  background: #4fd1c5;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.nav-btn:hover {
+  background: #38b2ac;
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.logout-btn:hover {
+  background: #e63939;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-left {
+    gap: 15px;
+  }
+}
+
+/* Landing Page styling */
+
+/* Container */
+.landing-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #0a84ff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-login {
+  padding: 6px 15px;
+  border: 1px solid #0a84ff;
+  border-radius: 4px;
+  color: #0a84ff !important;
+}
+
+.btn-register {
+  padding: 6px 15px;
+  border: none;
+  background: #0a84ff;
+  color: white !important;
+  border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 40px;
+  background: #f3f7ff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #0a84ff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-img {
+  width: 48%;
+  border-radius: 10px;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 40px;
+  background: white;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 25px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 25px;
+  background: #f8faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* HOW IT WORKS */
+.how {
+  padding: 60px 40px;
+  background: #eef3ff;
+}
+
+.how h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  text-align: center;
+  max-width: 200px;
+}
+
+.step-num {
+  font-size: 32px;
+  background: #0a84ff;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a84ff;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Login Page styling */
+
+/* Full page center layout */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ba94e2, #4284f7);
+}
+
+/* Card */
+.login-card {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.login-input:focus {
+  border-color: #9fb5db;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.4);
+  outline: none;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #185adb;
+  transform: translateY(-2px);
+}
+
+/* Register Page styling */
+
+/* Full page center with gradient background */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f39d72, #f56e71);
+}
+
+/* Card style */
+.register-card {
+  width: 380px;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.register-title {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Inputs */
+.register-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.register-input:focus {
+  border-color: #ff5e62;
+  box-shadow: 0 0 6px rgba(255, 94, 98, 0.4);
+  outline: none;
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff5e62;
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.register-btn:hover {
+  background: #ff3b44;
+  transform: translateY(-2px);
+}
+
+/* Redirect text */
+.register-login-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link {
+  color: #ff3b44;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Tourist Recommendation styling */
+
+.rec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.rec-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.rec-filter-box {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.rec-select {
+  width: 200px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.rec-btn-load {
+  padding: 6px 12px;
+  background: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rec-btn-load:hover {
+  background: #0369a1;
+}
+
+.rec-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  min-width: 900px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .rec-left {
+} */
+
+.rec-right {
+  width: 350px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rec-list {
+  list-style: none;
+  padding: 0;
+}
+
+.rec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.rec-details-btn {
+  padding: 5px 10px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rec-details-btn:hover {
+  background: #059669;
+}
+
+.rec-meta {
+  color: #666;
+  font-size: 14px;
+}
+
+.rec-details-box {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.rec-empty {
+  color: #777;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Tourist Dashboard styling */
+
+/* Main container */
+.tourist-container {
+  padding: 25px;
+}
+
+/* Title */
+.tourist-title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Profile Box */
+.profile-box {
+  width: 250px;
+  background: #f4f6ff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Slider container */
+.slider {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 10px 0 20px 0;
+}
+
+/* Slider cards */
+.slider-card {
+  min-width: 180px;
+  padding: 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.slider-card:hover {
+  transform: scale(1.05);
+}
+
+/* Slider colors */
+.pink {
+  background: #ffe1e8;
+}
+.blue {
+  background: #d9f2ff;
+}
+.yellow {
+  background: #fff7d6;
+}
+.green {
+  background: #dbffdb;
+}
+.brown {
+  background: #e4cef5;
+}
+
+/* Divider */
+.divider {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Package list */
+.package-list {
+  list-style: none;
+  padding: 0;
+}
+
+.package-item {
+  margin-bottom: 12px;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* View button */
+.view-btn {
+  margin-left: 10px;
+  background: #4fd1c5;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.view-btn:hover {
+  background: #38b2ac;
+}
+
+/* Admin Dashboard Add Landscape styling */
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box,
+.text-area,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-box:focus,
+.text-area:focus,
+select:focus {
+  border-color: #4c8bff;
+}
+
+.text-area {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.primary-btn {
+  background: #4c8bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #356fe6;
+}
+
+/* Admin Dashboard Manage Landscape */
+/* Container */
+.ml-container {
+  padding: 30px;
+}
+
+.ml-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.ml-no-data {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: #777;
+}
+
+/* Grid List */
+.ml-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.ml-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.ml-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image */
+.ml-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Content */
+.ml-content {
+  padding: 15px;
+}
+
+.ml-name {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.ml-city {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ml-description {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Info Grid */
+.ml-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Delete Button */
+.ml-delete-btn {
+  background: #ff4747;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.ml-delete-btn:hover {
+  background: #d93636;
+}
+
+/* Admin Dashboard Edit landscapes styling */
+.el-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+}
+
+.el-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.el-form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.el-input,
+.el-textarea,
+.el-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.el-textarea {
+  height: 100px;
+}
+
+.el-save-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.el-save-btn:hover {
+  background: #218838;
+}
+
+.el-loading {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Admin Dashboard Add packages styling */
+.pkg-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Card */
+.pkg-card {
+  width: 450px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pkg-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.input-box,
+.textarea-box,
+.select-box {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.input-box:focus,
+.textarea-box:focus,
+.select-box:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea */
+.textarea-box {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Landscapes List */
+.landscape-list {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.landscape-item {
+  display: block;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.submit-btn:active {
+  transform: scale(0.97);
+}
+
+/* Admin Dashboard Manage packages styling */
+
+.manage-container {
+  max-width: 1100px;
+  padding: 20px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Package Grid Layout */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.package-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.package-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.pkg-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.pkg-info {
+  font-size: 14px;
+  color: #444;
+  margin: 4px 0;
+}
+
+.pkg-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.edit-btn {
+  background: #4a90e2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #357ab8;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.empty-text {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-size: 16px;
+}
+
+/* Admin Bookings Page styling */
+
+/* Page Wrapper */
+.ab-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Heading */
+.ab-heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* No Data Text */
+.ab-empty {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Table Wrapper */
+.ab-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Main Table */
+.ab-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Header */
+.ab-table thead {
+  background: #007bff;
+  color: white;
+}
+
+.ab-table thead th {
+  padding: 14px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Table Rows */
+.ab-row td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #444;
+}
+
+.ab-row:hover {
+  background: #f6faff;
+  transition: 0.2s ease-in-out;
+}
+
+/* Status Styles */
+.ab-status {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ab-status-green {
+  background: #d4f7d4;
+  color: #0a6b0a;
+}
+
+.ab-status-yellow {
+  background: #fff3cd;
+  color: #a67c00;
+}
+
+.ab-status-red {
+  background: #f8d7da;
+  color: #a30000;
+}

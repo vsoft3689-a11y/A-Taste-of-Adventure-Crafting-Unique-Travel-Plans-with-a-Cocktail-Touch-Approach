@@ -1,0 +1,103 @@
+Container
+.manage-landscape-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.title {
+  text-align: left;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+}
+
+/* List styling */
+.manage-landscape-list {
+  display: flex;
+  flex-wrap: wrap; /* allow items to move to next row */
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.manage-landscape-item {
+  width: 300px; /* fixed width instead of min-width */
+  flex-grow: 0; /* allows flexible resizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.manage-landscape-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* keeps perfect image shape */
+}
+
+.manage-landscape-item:hover {
+  background: #f1f1f1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+/* Name text */
+.landscape-name {
+  display: block;
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Delete button */
+.manage-landscape-delete-btn {
+  /* width: 100px; */
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.1s;
+}
+
+.manage-landscape-delete-btn:hover {
+  background: #c0392b;
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+
+/* {
+  "title": "Manali Snow Adventure",
+  "description": "Snow trekking + campfire + skiing",
+  "price": 12000,
+  "durationDays": 5,
+  "season": "WINTER",
+  "active": true,
+  "rating": 4.8,
+  "maxPeople": 20,
+  "minPeople": 2,
+  "availableFrom": "2025-01-10",
+  "availableTo": "2025-03-15",
+  "packageType": "Family",
+  "inclusions": "Hotel, Transport, Breakfast",
+  "exclusions": "Personal expenses",
+  "landscapeIds": [1, 4, 7]
+} */
